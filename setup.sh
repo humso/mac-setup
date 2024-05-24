@@ -72,6 +72,8 @@ applications=(
     figma
     spotify
     slack
+    font-inter
+    font-jetbrains-mono
     # Add more applications here
 )
 
