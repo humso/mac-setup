@@ -45,16 +45,16 @@ brew install zsh
 echo "Installing Oh My Zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+
 # Install Pure prompt theme
 echo "Installing Pure prompt theme..."
 brew install pure
 
+
 # Set Zsh as the default shell
 echo "Setting Zsh as the default shell..."
 chsh -s $(which zsh)
-
 echo "Zsh and Oh My Zsh have been set up successfully!"
-
 
 
 # List of applications to install with Homebrew Cask
@@ -74,10 +74,12 @@ applications=(
     slack
     # Add more applications here
 )
+
+
 # Install each application
 echo "Installing applications with Homebrew Cask..."
 for app in "${applications[@]}"; do
-    brew install --cask "$app"
+  brew install --cask "$app"
 done
 
 
